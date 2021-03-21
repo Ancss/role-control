@@ -1,5 +1,4 @@
 import { resolve } from 'path'
-console.log('__dirname---------------', resolve(__dirname, 'src/main.js'))
 // https://vitejs.dev/config/
 export default {
   resolve: {
