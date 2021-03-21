@@ -39,9 +39,9 @@ let roles = {
 }
 ```
 
-#### 对象内成员
+#### **对象内成员**
 
-##### includes
+##### **includes**
 
 ​	填写需要下级成员名单，类型为数组，如上`salesLeader`可以获取`sales`权限
 
@@ -52,7 +52,7 @@ let roles = {
 - `produceLeader`
 - `produce`
 
-##### excludes
+##### **excludes**
 
 ​		如果你想让当前角色获取下级的权限，但是又不想得到更下级的某个权限，那你可以放入`excludes`名单中，他同样是一个数组
 
@@ -60,7 +60,7 @@ let roles = {
 
 ​	不过需要注意此时`produceLeader`下的所有权限都将无法获得
 
-##### extras
+##### **extras**
 
 ​	`extras`是额外的意思，他仅仅是作为`includes`中拥有，但又被`excludes`下级中排除，但是又想获取更下级的某个权限，那你就可以使用他
 
@@ -70,9 +70,9 @@ let roles = {
 
 ​	此时如果你将`finance`放入`includes`中是无效的，他的上级已经在`excludes`中，所以如果你想单独获取他的权限，那你只能放入`extras`中
 
-### 如何使用
+### **如何使用**
 
-#### createRolesMap
+#### **createRolesMap**
 
 本库只暴露该方法，将上面创建好的对象传递给该函数，他会递归创建角色关系图，并返回一个对象，对象内包含两个方法
 
@@ -83,9 +83,9 @@ console.log(roleManage)//{filterMenus,isConfirm}
 
 
 
-##### 返回的对象包含的两个方法
+##### **返回的对象包含的两个方法**
 
-###### `filterMenus`
+###### **filterMenus**
 
 - 将你的routes或其他嵌套的对象中设置`key:__role`,如下
 
@@ -131,7 +131,7 @@ console.log(roleManage)//{filterMenus,isConfirm}
    const filterRoutes = roleManage.filterMenus(routes, 'super')
   ```
 
-###### `isConfirm`
+###### **isConfirm**
 
 ​	此时如果你有个需求，一个按钮，需要判断当前角色是否应该展示，你就可以通过`isConfirm`方法来进行判断
 
