@@ -1,7 +1,7 @@
 {
   "name": "role-control",
   "version": "1.0.0",
-  "description": "这是一个角色权限控制的js库，提供只提供基本的三个方法，就可以轻松的完全权限控制管理功能",
+  "description": "这是一个角色权限控制的js库，只提供基本的三个方法，就可以轻松的完全权限控制管理功能",
   "keywords": [
     "js",
     "vite",
@@ -11,11 +11,11 @@
     "auth",
     "authority management"
   ],
-  "author": "git地址==",
+  "author": "https://github.com/Ancss/role-control/tree/master",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git链接 .git结尾"
+    "url": "https://github.com/Ancss/role-control.git"
   },
   "main": "./dist/role-control.umd.js",
   "module": "./dist/role-control.es.js",
