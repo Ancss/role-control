@@ -1,0 +1,51 @@
+{
+  "name": "role-control",
+  "version": "1.0.0",
+  "description": "这是一个角色权限控制的js库，提供只提供基本的三个方法，就可以轻松的完全权限控制管理功能",
+  "keywords": [
+    "js",
+    "vite",
+    "role",
+    "control",
+    "authority",
+    "auth",
+    "authority management"
+  ],
+  "author": "git地址==",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git链接 .git结尾"
+  },
+  "main": "./dist/role-control.umd.js",
+  "module": "./dist/role-control.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/role-control.es.js",
+      "require": "./dist/role-control.umd.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview",
+    "test": "jest",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.168",
+    "@vitejs/plugin-vue": "^1.1.5",
+    "typescript": "^4.1.3",
+    "vite": "^2.0.5",
+    "@types/jest": "^26.0.14",
+    "@types/node": "^14.11.10",
+    "jest": "^26.5.3",
+    "ts-jest": "^26.4.1"
+  }
+}
